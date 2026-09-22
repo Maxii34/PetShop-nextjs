@@ -178,7 +178,7 @@ export function CatalogoClient() {
       </p>
 
       {visibles.length > 0 ? (
-        <div className="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {visibles.map((p) => (
             <ProductCard key={p._id} producto={p} />
           ))}
