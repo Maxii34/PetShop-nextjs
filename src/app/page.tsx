@@ -1,20 +1,23 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer'
-
-// Importar componentes de la página de inicio aquí
-// import HeroSection from '@/components/home/HeroSection';
-// import ProductsSection from '@/components/home/ProductsSection';
-// import FeaturesSection from '@/components/home/FeaturesSection';
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { HeroSection } from "@/components/home/HeroSection";
+import { BenefitsBar } from "@/components/home/BenefitsBar";
+import { CategoriesSection } from "@/components/home/CategoriesSection";
+import { ProductsSection } from "@/components/home/ProductsSection";
+import { OffersSection } from "@/components/home/OffersSection";
+import { CommunitySection } from "@/components/home/CommunitySection";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex flex-col items-center w-full">
-        {/* Componentes de la página de inicio irán aquí */}
-        {/* <HeroSection />
+      <main className="flex w-full flex-col">
+        <HeroSection />
+        <BenefitsBar />
+        <CategoriesSection />
         <ProductsSection />
-        <FeaturesSection /> */}
+        <OffersSection />
+        <CommunitySection />
       </main>
       <Footer />
     </>
